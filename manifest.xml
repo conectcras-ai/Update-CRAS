@@ -7,7 +7,7 @@
     <property key="vendor" value="SEMAS" />
   </properties>
   <files>
-    <file path="app/cras-app-1.0.0-all.jar" uri="app/cras-app-1.0.0-all.jar" size="60745262" checksum="bd79bcfe" />
+    <file path="app/cras-app-1.0.0-all.jar" uri="app/cras-app-1.0.0-all.jar" size="60749323" checksum="c62184a1" />
   </files>
   <launch>
     <application mainClass="br.semas.sistemas.gestao.cras.app.App">
