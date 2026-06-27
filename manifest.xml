@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <configuration xmlns="https://update4j.org/schema/4.0/config" version="1.0.0">
   <base uri="https://raw.githubusercontent.com/conectcras-ai/Update-CRAS/main/" path="${user.dir}/" />
   <properties>
