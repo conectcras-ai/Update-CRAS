@@ -10,8 +10,8 @@ Estrutura esperada:
 - public.pem
 - app/cras-app-1.0.0-all.jar
 
-Versao publicada: 1.0.14. O nome fisico do JAR permanece estavel para atualizar instalacoes existentes.
+Versao publicada: 1.0.15. O nome fisico do JAR permanece estavel para atualizar instalacoes existentes.
 O manifesto contem tamanho, checksum e assinatura digital.
-Esta versao corrige a versao exibida no menu lateral e na tela Sobre, usa um unico download para os layouts instalado e portatil e reforca a validacao da substituicao do JAR.
+Esta versao permite ao servidor copiar com autenticacao a senha tecnica aleatoria e ao cliente informa-la em campo protegido durante a conexao. Nenhuma senha fixa e embutida no codigo ou no instalador.
 
 Para o botao Sobre > Atualizar sistema detectar nova versao, a versao do manifest precisa ser maior que a versao instalada.
