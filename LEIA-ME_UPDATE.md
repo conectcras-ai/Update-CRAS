@@ -1,17 +1,12 @@
 ﻿# Update-CRAS
 
-Publique o conteudo desta pasta no repositorio publico:
+Versão publicada: 1.0.32.
 
-https://github.com/conectcras-ai/Update-CRAS
+Inclui a migração aditiva V2026_10_08_01__scfv_grupos_multiplos_horarios.sql, preservando horários legados e sessões históricas. 25 testes automatizados passaram. Faça backup verificado do banco e dos anexos e atualize primeiro o CRAS no servidor. Confirme a migração no Flyway antes de usar os novos horários no SCFV 1.0.38. Não use repair/clean para contornar erros. Esta publicação não executou a migração no MySQL.
 
-Estrutura esperada:
+Canal: https://github.com/conectcras-ai/Update-CRAS
 
-- manifest.xml
-- public.pem
-- app/cras-app-1.0.0-all.jar
-
-Versao publicada: 1.0.15. O nome fisico do JAR permanece estavel para atualizar instalacoes existentes.
-O manifesto contem tamanho, checksum e assinatura digital.
-Esta versao permite ao servidor copiar com autenticacao a senha tecnica aleatoria e ao cliente informa-la em campo protegido durante a conexao. Nenhuma senha fixa e embutida no codigo ou no instalador.
-
-Para o botao Sobre > Atualizar sistema detectar nova versao, a versao do manifest precisa ser maior que a versao instalada.
+Arquivos: manifest.xml, public.pem e app/cras-app-1.0.0-all.jar.
+O manifesto é assinado e inclui versão, tamanho, checksum e assinatura do binário.
+O nome físico do JAR permanece estável para as instalações existentes.
+Use Sobre > Verificar / Atualizar agora. A publicação não instala automaticamente nos computadores.
