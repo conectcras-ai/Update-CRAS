@@ -1,8 +1,8 @@
 # Update-CRAS
 
-Versão publicada: 1.0.33.
+Versão publicada: 1.0.34.
 
-Inclui a migração aditiva V2026_10_08_02__scfv_auditoria_excecao_etaria.sql para histórico das autorizações de exceção do SCFV. Não inventa autoria para vínculos antigos. 26 testes automatizados passaram. Faça backup verificado do banco e dos anexos e atualize primeiro o CRAS no servidor. Confirme a migração no Flyway, depois atualize todos os clientes SCFV para 1.0.40. Não use repair/clean para contornar erros. Esta publicação não executou a migração no MySQL.
+O atualizador inicia pelo WScript gráfico e executa o aplicador PowerShell com janela oculta, preservando a autorização administrativa do Windows. A versão real é lida da configuração empacotada no JAR; o manifesto embutido antigo não provoca mais apresentação/comparação erradas. Inclui a migração de auditoria do SCFV da 1.0.33. Faça backup e atualize primeiro o CRAS servidor, depois o SCFV 1.0.41. A publicação não instala programas nem executa migrações no servidor.
 
 Canal: https://github.com/conectcras-ai/Update-CRAS
 
