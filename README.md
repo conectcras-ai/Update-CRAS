@@ -1,12 +1,11 @@
 # Update-CRAS
 
-Versão publicada: 1.0.34.
+Versão publicada: 1.0.35.
 
-O atualizador inicia pelo WScript gráfico e executa o aplicador PowerShell com janela oculta, preservando a autorização administrativa do Windows. A versão real é lida da configuração empacotada no JAR; o manifesto embutido antigo não provoca mais apresentação/comparação erradas. Inclui a migração de auditoria do SCFV da 1.0.33. Faça backup e atualize primeiro o CRAS servidor, depois o SCFV 1.0.41. A publicação não instala programas nem executa migrações no servidor.
+Permissões negadas sem sessão ou sem consulta válida; máscaras de CPF/NIS/telefone nas listas; permissão específica de exportação; filtro de sigilo e público autorizado na réplica; negativa de acesso não vira login offline.
 
-Canal: https://github.com/conectcras-ai/Update-CRAS
+35 testes passaram; 160 no conjunto dos cinco programas. Sem migração nova.
 
-Arquivos: manifest.xml, public.pem e app/cras-app-1.0.0-all.jar.
-O manifesto é assinado e inclui versão, tamanho, checksum e assinatura do binário.
-O nome físico do JAR permanece estável para as instalações existentes.
-Use Sobre > Verificar / Atualizar agora. A publicação não instala automaticamente nos computadores.
+Use Sobre > Verificar / Atualizar agora e reinicie quando solicitado. O nome físico do JAR permanece estável. Manifesto e binário assinados; confira REVISAO_1.0.35.md para detalhes.
+
+Limitações: NÃO remove caches/anexos antigos, NÃO altera grants nem separa contas do banco e NÃO encerra a validação completa de todas as telas. A publicação não instala automaticamente nos computadores.
